@@ -1,4 +1,7 @@
 # Análisis de eficiencia de marketing y comportamiento de clientes — Proyecto para Showz
+
+## ES Español
+
 Descripción del proyecto:
 
 Como parte de mis prácticas en el departamento de analítica de Showz, una empresa de venta de entradas para eventos, realicé un estudio integral para optimizar los gastos de marketing y entender mejor el comportamiento de los usuarios en la plataforma. El objetivo principal fue evaluar el retorno de inversión de diferentes canales de adquisición, mejorar la segmentación de clientes y ofrecer recomendaciones de inversión con base en datos.
@@ -82,5 +85,94 @@ Análisis cohortes, atribución de canales, KPIs de marketing (LTV, CAC, ROMI)
 
 ## Impacto del proyecto:
 Este análisis sentó las bases para una asignación de presupuesto basada en datos en el equipo de marketing, ayudando a reducir el CAC promedio y aumentar el ROI general de campañas publicitarias.
+
+
+# Marketing efficiency and customer behavior analysis — Project for Showz
+
+## US English
+
+Project description:
+
+As part of my internship in the analytics department at Showz, an event ticketing company, I conducted a comprehensive study to optimize marketing expenses and better understand user behavior on the platform. The main objective was to evaluate the return on investment of different acquisition channels, improve customer segmentation, and offer data-driven investment recommendations.
+
+## Analysis objectives:
+
+Investigate how users interact with the platform and when they become customers.
+
+Calculate key metrics such as CAC, LTV, and ROMI by acquisition source.
+
+Evaluate the profitability of digital marketing spending across different devices and channels.
+
+Establish a basis for strategic marketing investment decisions.
+
+## Data Preparation
+Three main datasets were integrated:
+
+Site visits (visits_log_us.csv)
+
+Orders and purchases (orders_log_us.csv)
+
+Marketing expenses (costs_us.csv)
+
+Tasks included:
+
+Data type conversion and data normalization.
+
+Calculation of sessions per user and their duration.
+
+Joining datasets using common keys for multi-source analysis.
+
+## Customer behavior analysis
+Key metrics related to platform usage were analyzed:
+
+Daily, weekly, and monthly visit frequency.
+
+Average session duration and user return.
+
+Conversion times from first access to first purchase (Conversion 0d, 1d, etc.).
+
+Average order size and purchasing behavior by cohort.
+
+LTV (customer lifetime value) for different segments.
+
+## Marketing and profitability analysis
+Key metrics were calculated and visualized:
+
+Total cost and cost per acquisition source.
+
+CAC (customer acquisition cost) per channel.
+
+ROMI (return on marketing investment) per channel and device.
+
+Comparison of channel performance such as organic, social media, paid advertising, etc.
+
+## Key findings:
+Organic and referral sources had the best ROMI thanks to their low CAC.
+
+Mobile platforms generated more sessions, but conversions were higher on desktops.
+
+The average conversion time was shorter in campaigns with direct CTAs, such as email marketing.
+
+Some channels had a high cost with low return, suggesting divestment.
+
+## Marketing investment recommendations:
+Focus budget on channels with positive ROMI, such as organic search, referrals, and specific remarketing campaigns.
+
+Reduce investment in channels with low LTV and high CAC, such as certain non-targeted display campaigns.
+
+Customize campaigns by device, prioritizing desktop for conversions and mobile for lead generation.
+
+Implement monthly cohort analysis to monitor the efficiency of new campaigns.
+
+## Tools used:
+
+Python (pandas, numpy, matplotlib, seaborn)
+
+Jupyter Notebook
+
+Cohort analysis, channel attribution, marketing KPIs (LTV, CAC, ROMI)
+
+## Project impact:
+This analysis laid the foundation for data-driven budget allocation within the marketing team, helping to reduce average CAC and increase the overall ROI of advertising campaigns.
 
 
