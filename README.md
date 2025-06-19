@@ -2,177 +2,120 @@
 
 ## ES Español
 
-Descripción del proyecto:
+**Rol:** Analista de Datos (Prácticas)  
+**Herramientas:** Python (pandas, numpy, matplotlib, seaborn), Jupyter Notebook
 
-Como parte de mis prácticas en el departamento de analítica de Showz, una empresa de venta de entradas para eventos, realicé un estudio integral para optimizar los gastos de marketing y entender mejor el comportamiento de los usuarios en la plataforma. El objetivo principal fue evaluar el retorno de inversión de diferentes canales de adquisición, mejorar la segmentación de clientes y ofrecer recomendaciones de inversión con base en datos.
+### Descripción del proyecto  
+Como parte de mis prácticas en el departamento de analítica de Showz, empresa de venta de entradas para eventos, realicé un estudio integral para optimizar gastos de marketing y entender mejor el comportamiento de usuarios en la plataforma. El objetivo principal fue evaluar el retorno de inversión de distintos canales de adquisición, mejorar la segmentación y ofrecer recomendaciones basadas en datos.
 
-## Objetivos del análisis:
+### Objetivos del análisis  
+- Investigar interacción de usuarios y momento de conversión a clientes.  
+- Calcular métricas clave: CAC, LTV, ROMI por fuente de adquisición.  
+- Evaluar rentabilidad del gasto en marketing digital según dispositivos y canales.  
+- Establecer base para decisiones estratégicas de inversión en marketing.
 
-Investigar cómo los usuarios interactúan con la plataforma y cuándo se convierten en clientes.
+### Preparación de los datos  
+Se integraron tres datasets principales:  
+- visitas al sitio (visits_log_us.csv)  
+- órdenes y compras (orders_log_us.csv)  
+- gastos de marketing (costs_us.csv)
 
-Calcular métricas clave como CAC, LTV, y ROMI por fuente de adquisición.
+Tareas realizadas:  
+- Conversión de tipos y normalización de fechas.  
+- Cálculo de sesiones por usuario y duración promedio.  
+- Unión de datasets por claves comunes para análisis multifuente.
 
-Evaluar la rentabilidad del gasto en marketing digital en distintos dispositivos y canales.
+### Análisis de comportamiento del cliente  
+- Frecuencia de visitas diaria, semanal y mensual.  
+- Duración promedio de sesión y tasa de retorno de usuarios.  
+- Tiempos de conversión desde primer acceso hasta primera compra (Conversion 0d, 1d, etc.).  
+- Tamaño promedio del pedido y comportamiento por cohorte.  
+- LTV para distintos segmentos.
 
-Establecer una base para decisiones estratégicas de inversión en marketing.
+### Análisis de marketing y rentabilidad  
+- Cálculo y visualización de costos totales y por fuente.  
+- CAC por canal.  
+- ROMI por canal y dispositivo.  
+- Comparación de rendimiento entre canales (orgánico, redes sociales, pago, etc.).
 
-## Preparación de los datos
-Se integraron tres datasets principales:
+### Hallazgos clave  
+- Fuentes orgánicas y referidos mostraron mejor ROMI por bajo CAC.  
+- Plataformas móviles generaron más sesiones; conversiones mayores en escritorio.  
+- Conversiones más rápidas en campañas con CTA directas (email marketing).  
+- Algunos canales con alto costo y bajo retorno, sugiriendo desinversión.
 
-Visitas al sitio (visits_log_us.csv)
+### Recomendaciones de inversión en marketing  
+- Concentrar presupuesto en canales con ROMI positivo: búsqueda orgánica, referidos, remarketing.  
+- Reducir inversión en canales con bajo LTV y alto CAC, como display no segmentado.  
+- Personalizar campañas por dispositivo: escritorio para conversiones, móvil para generación de leads.  
+- Implementar análisis de cohortes mensuales para monitorear campañas nuevas.
 
-Órdenes y compras (orders_log_us.csv)
+### Herramientas utilizadas  
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Jupyter Notebook  
+- Análisis de cohortes, atribución de canales, KPIs de marketing (LTV, CAC, ROMI)
 
-Gastos de marketing (costs_us.csv)
+### Impacto del proyecto  
+Este análisis sentó las bases para una asignación de presupuesto basada en datos, ayudando a reducir CAC promedio y aumentar ROI general de campañas publicitarias.
 
-Las tareas incluyeron:
-
-Conversión de tipos de datos y normalización de fechas.
-
-Cálculo de sesiones por usuario y su duración.
-
-Unión de datasets mediante claves comunes para análisis multifuente.
-
-## Análisis de comportamiento del cliente
-Se analizaron métricas clave relacionadas con el uso de la plataforma:
-
-Frecuencia de visitas diaria, semanal y mensual.
-
-Duración promedio de sesión y retorno de usuarios.
-
-Tiempos de conversión desde el primer acceso hasta la primera compra (Conversion 0d, 1d, etc.).
-
-Tamaño promedio del pedido y comportamiento de compra por cohorte.
-
-LTV (Valor del tiempo de vida del cliente) para distintos segmentos.
-
-## Análisis de marketing y rentabilidad
-Se calcularon y visualizaron métricas clave:
-
-Costo total y por fuente de adquisición.
-
-CAC (Costo de adquisición de cliente) por canal.
-
-ROMI (Retorno sobre inversión en marketing) por canal y dispositivo.
-
-Comparación del rendimiento de canales como orgánico, redes sociales, publicidad pagada, etc.
-
-## Hallazgos clave:
-Las fuentes orgánicas y de referidos presentaron el mejor ROMI gracias a su bajo CAC.
-
-Las plataformas móviles generaron más sesiones, pero las conversiones fueron más altas en escritorio.
-
-El tiempo medio de conversión fue menor en campañas con CTA directas, como email marketing.
-
-Algunos canales tuvieron un alto costo con bajo retorno, lo que permitió sugerir su desinversión.
-
-## Recomendaciones de inversión en marketing:
-Concentrar presupuesto en canales con ROMI positivo, como búsqueda orgánica, referidos y campañas específicas de remarketing.
-
-Reducir inversión en canales con bajo LTV y alto CAC, como ciertas campañas de display no segmentadas.
-
-Personalizar campañas por dispositivo, priorizando escritorio para conversiones y móvil para generación de leads.
-
-Implementar análisis de cohortes mensuales para monitorear la eficiencia de campañas nuevas.
-
-## Herramientas utilizadas:
-
-Python (pandas, numpy, matplotlib, seaborn)
-
-Jupyter Notebook
-
-Análisis cohortes, atribución de canales, KPIs de marketing (LTV, CAC, ROMI)
-
-## Impacto del proyecto:
-Este análisis sentó las bases para una asignación de presupuesto basada en datos en el equipo de marketing, ayudando a reducir el CAC promedio y aumentar el ROI general de campañas publicitarias.
-
+---
 
 # Marketing efficiency and customer behavior analysis — Project for Showz
 
 ## US English
 
-Project description:
+**Role:** Data Analyst Intern  
+**Tools:** Python (pandas, numpy, matplotlib, seaborn), Jupyter Notebook
 
-As part of my internship in the analytics department at Showz, an event ticketing company, I conducted a comprehensive study to optimize marketing expenses and better understand user behavior on the platform. The main objective was to evaluate the return on investment of different acquisition channels, improve customer segmentation, and offer data-driven investment recommendations.
+### Project description  
+As part of my internship in Showz’s analytics department, an event ticketing company, I conducted a comprehensive study to optimize marketing expenses and better understand user behavior on the platform. The main goal was to evaluate ROI of acquisition channels, improve segmentation, and offer data-driven investment recommendations.
 
-## Analysis objectives:
+### Analysis objectives  
+- Investigate how users interact with the platform and when they convert to customers.  
+- Calculate key metrics: CAC, LTV, ROMI by acquisition source.  
+- Evaluate digital marketing profitability across devices and channels.  
+- Establish a basis for strategic marketing investment decisions.
 
-Investigate how users interact with the platform and when they become customers.
+### Data preparation  
+Three main datasets integrated:  
+- Site visits (visits_log_us.csv)  
+- Orders and purchases (orders_log_us.csv)  
+- Marketing expenses (costs_us.csv)
 
-Calculate key metrics such as CAC, LTV, and ROMI by acquisition source.
+Tasks included:  
+- Data type conversion and date normalization.  
+- Calculation of sessions per user and average session duration.  
+- Joining datasets by common keys for multi-source analysis.
 
-Evaluate the profitability of digital marketing spending across different devices and channels.
+### Customer behavior analysis  
+- Daily, weekly, and monthly visit frequency.  
+- Average session duration and user return rate.  
+- Conversion times from first access to first purchase (Conversion 0d, 1d, etc.).  
+- Average order size and purchasing behavior by cohort.  
+- LTV for different segments.
 
-Establish a basis for strategic marketing investment decisions.
+### Marketing and profitability analysis  
+- Calculation and visualization of total and source costs.  
+- CAC per channel.  
+- ROMI by channel and device.  
+- Comparison of channel performance (organic, social media, paid ads, etc.).
 
-## Data Preparation
-Three main datasets were integrated:
+### Key findings  
+- Organic and referral sources had best ROMI due to low CAC.  
+- Mobile platforms generated more sessions, desktop had higher conversions.  
+- Faster conversions in campaigns with direct CTAs (email marketing).  
+- Some channels had high cost but low return, suggesting divestment.
 
-Site visits (visits_log_us.csv)
+### Marketing investment recommendations  
+- Focus budget on channels with positive ROMI: organic search, referrals, remarketing.  
+- Reduce investment in channels with low LTV and high CAC (non-targeted display).  
+- Customize campaigns by device: desktop for conversions, mobile for lead generation.  
+- Implement monthly cohort analysis to monitor new campaign efficiency.
 
-Orders and purchases (orders_log_us.csv)
+### Tools used  
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Jupyter Notebook  
+- Cohort analysis, channel attribution, marketing KPIs (LTV, CAC, ROMI)
 
-Marketing expenses (costs_us.csv)
-
-Tasks included:
-
-Data type conversion and data normalization.
-
-Calculation of sessions per user and their duration.
-
-Joining datasets using common keys for multi-source analysis.
-
-## Customer behavior analysis
-Key metrics related to platform usage were analyzed:
-
-Daily, weekly, and monthly visit frequency.
-
-Average session duration and user return.
-
-Conversion times from first access to first purchase (Conversion 0d, 1d, etc.).
-
-Average order size and purchasing behavior by cohort.
-
-LTV (customer lifetime value) for different segments.
-
-## Marketing and profitability analysis
-Key metrics were calculated and visualized:
-
-Total cost and cost per acquisition source.
-
-CAC (customer acquisition cost) per channel.
-
-ROMI (return on marketing investment) per channel and device.
-
-Comparison of channel performance such as organic, social media, paid advertising, etc.
-
-## Key findings:
-Organic and referral sources had the best ROMI thanks to their low CAC.
-
-Mobile platforms generated more sessions, but conversions were higher on desktops.
-
-The average conversion time was shorter in campaigns with direct CTAs, such as email marketing.
-
-Some channels had a high cost with low return, suggesting divestment.
-
-## Marketing investment recommendations:
-Focus budget on channels with positive ROMI, such as organic search, referrals, and specific remarketing campaigns.
-
-Reduce investment in channels with low LTV and high CAC, such as certain non-targeted display campaigns.
-
-Customize campaigns by device, prioritizing desktop for conversions and mobile for lead generation.
-
-Implement monthly cohort analysis to monitor the efficiency of new campaigns.
-
-## Tools used:
-
-Python (pandas, numpy, matplotlib, seaborn)
-
-Jupyter Notebook
-
-Cohort analysis, channel attribution, marketing KPIs (LTV, CAC, ROMI)
-
-## Project impact:
-This analysis laid the foundation for data-driven budget allocation within the marketing team, helping to reduce average CAC and increase the overall ROI of advertising campaigns.
-
-
+### Project impact  
+This analysis established the foundation for data-driven budget allocation within marketing, helping reduce average CAC and increase overall ROI of advertising campaigns.
